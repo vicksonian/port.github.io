@@ -1,6 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 * 
 {
@@ -15,13 +12,56 @@
 }
 
 :root {
-
+    --header-height: 3rem;
     --bg-color: #000000;
     --second-bg-color: #13161b;
     --text-color: #fff;
     --color-a-color: rgb(233, 192, 198);
     --color-a1-color: rgb(243, 151, 151);
-    
+    --container-color:#fff;
+    --text-color-light: #1a1919;
+
+    --body-font: 'poppins', sans-serif;
+
+    --big-font-size: .2rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1.125rem;
+    --normala-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: 75rem;
+
+    --font-medium: 500;
+    --font-simi-bold: 600;
+
+
+    /*====== Margenes Bottom ==========*/
+    /* .25rem = 4px, 5rem = 8px, .75rem = 12px*/ 
+     --mb-0-25 : .25rem; 
+     --mb-0-5 : .5rem; 
+     --mb-0-75 : .75rem; 
+     --mb-1 : 1rem; 
+     --mb-1-5 : 1.5rem; 
+     --mb-2 : 2rem; 
+     --mb-2-5 : 2.5rem; 
+     --mb-3 : 3rem; 
+     
+     /*========== z index === */
+     --z-tooltip : 10; 
+     --z-fixed : 100; 
+     --z-modal : 1000;
+}
+
+@media screen and (min-width : 968px) { 
+    :root{
+    --big-font-size : 3rem; 
+    --h1-font-size : 2.25rem; 
+    --h2-font-size : 1.5rem; 
+    --h3-font-size : 1.25rem; 
+    --normal-font-size : 1rem; 
+    --small-font-size : .875rem;
+    --smaller-font-size : .813rem; 
+    }
 }
 
 
@@ -39,11 +79,17 @@
 html {
     font-size: 62.5%;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 body {
     background: var(--primary--color);
     color: var(--secondary--color);
+}
+        
+h1, h2, h3, h4 
+{
+    font-weight : var(--font-semi-bold);
 }
 
 section {
@@ -51,6 +97,23 @@ section {
     padding: 10rem 9% 2rem;
 }
 
+.section_title
+{
+    font-size : var(--h1-font-size);
+} 
+
+.section_subtitle
+{ 
+    display : block; 
+    font-size : var(--small-font-size);
+    margin-bottom: var(--mb-3);
+} 
+
+.section_title, 
+.section_subtitle
+{
+    text-align : center;
+} 
 /* header styling*/
 .header {
     position: fixed;
@@ -105,12 +168,15 @@ section {
 
     }
 }
-.navbar a {
-    font-size: 1.7rem;
-    color: rgb(9, 235, 243);
-    margin-left: 4rem;
-    transition: 1s;
-    font-weight: 300;
+.navbar a 
+{
+    font-size: 2.0rem;
+    color: #e9edf1;
+    margin-left: 5rem;
+    transition: 2s;
+    font-weight: 500;
+    font-style: normal;
+    
 }
 
 navbar a:hover,
@@ -125,6 +191,37 @@ navbar a:hover,
     color: var(--secondary--color);
     display: none;
     margin-left: 60rem;
+}
+
+
+@media screen and (max-width : 767px){ 
+    .nav_menu{
+    position : fixed; 
+    bottom : 0; 
+    left : 0; 
+    width : 100%; 
+    background-color : var(--body-color); 
+    padding : 2rem 1.5rem 4rem; 
+    box-shadow : 0 1px 4px rgba(0,0,0,.15);
+    border-radius : 1.5rem 1.5rem 0 0;
+    transition : .3s; 
+    }
+}
+
+.nav_list
+{
+grid-template-columns : repeat (3, 1fr); 
+gap : 2rem; 
+}
+
+.nav_link
+{
+    display : flex; 
+    flex-direction : column; 
+    align-items : center; 
+    font-size : var(--small-font-size); 
+    color : var(--title-color); 
+    font-weight : var(--font-medium);
 }
 
 
@@ -233,7 +330,16 @@ span {
 .btn:hover {
     box-shadow: none;
 }
+ .btn i
+ {
+    font-size: 1.7em;
+    color: #03a9f4;
+ }
 
+ .btn i:hover
+{
+    color: rgb(24, 10, 214);
+}
 
 /* =====start of the about section styling========  */
 .about {
@@ -335,6 +441,141 @@ span {
     font-size: 1.6rem;
     margin: 1rem 0 3rem;
 }
+
+
+/*=======================skills=======================*/
+
+.skills__container
+{
+    row-gap: 0;
+
+}
+
+.skills span{
+    font-weight: 600;
+}
+
+.skills
+.skills__header
+{
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--mb-2-5);
+    cursor: pointer;
+}
+
+.skills__icon,
+.skills__arrow
+{
+    font-size: 2rem;
+    color: mediumpurple;
+}
+
+.skills__icon{
+    margin-right: var(--mb-0-75);
+}
+
+.skills__titles{
+    font-size: var(--h3-font-size);
+}
+
+.skills__subtitle{
+    font-size: var(--small-font-size);
+    color: var(--text-color-light);
+}
+
+.skills__arrow{
+    margin-left: auto;
+    transition: .4s;
+}
+
+.skills__list
+{
+   margin-left: 1.5rem;
+   padding-left: 2.7rem; 
+}
+
+.skills__titles{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .5rem;
+}
+
+
+.skills_name
+{
+    font-size: .1rem;
+    font-weight: var(--font-medium);
+}
+.skills__bar,
+.skills__percentage{
+    height: 5px;
+    border-radius: .25rem;
+}
+
+.skills__bar{
+    background-color:#8f7ccf;
+}
+
+.skills__percentage
+{
+    display: block;
+    background-color: rgb(124, 8, 233);
+    
+}
+
+
+.skills__html{
+    width: 80%;
+}
+.skills__css{
+    width: 75%;
+}
+.skills__js{
+    width: 60%;
+}
+.skills__php{
+    width: 50%;
+}
+.skills__node{
+    width: 50%;
+}
+.skills__python{
+    width: 55%;
+}
+
+.skills__close .skills__list
+{
+    height: 0;
+    overflow: hidden;
+}
+
+.skills__open .skills__list{
+    height: max-content;
+    margin-bottom: var(--mb-2-5);
+}
+
+.skills__open .skills__arrow{
+    transform: rotate(-180deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .box{
@@ -645,8 +886,39 @@ h3{
 
 
 
+/*                      breakpoints                       */
+/*
+@media (max-width: 1200px) {
+    html {
+        font-size: 55%;
+    }
+}
 
+@media (max-width: 991px) {
+    .header {
+        padding: 2rem 3%;
+    }
 
+    section {
+        padding: 10rem 3% 2rem;
+    }
+
+    .services {
+        padding-bottom: 7rem;
+    }
+
+    .portfolio {
+        padding-bottom: 7rem;
+    }
+
+    .contact {
+        min-height: auto;
+    }
+
+    .footer {
+        padding: 2rem 3%;
+    }
+}
 
 /*           menu toggle part               */
 @media (max-width: 769px) {
