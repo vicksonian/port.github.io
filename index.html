@@ -1,104 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>George Pußl</title>
+    <title>George</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
 
-    <!--==================Custom css link=============-->
+    <link
+    rel="stylesheet"
+
+    
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+  
+    <script src="index.js"></script>
     <link rel="stylesheet" href="styles.css">
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Pro">
+ 
+    <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+  ></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("J01QMSmqj93QY8gmJ");
+    })();
+  </script>
 
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-    </script>
-    <script type="text/javascript">
-        (function () {
-            emailjs.init("60Z_ESEQEp6TbbLys");
-        })();
-    </script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/menu.css' rel='stylesheet'>
 </head>
-
 <body>
 
-    <!--===============header design================-->
+    
 
+<!--===============header design================-->
     <header class="header">
-        <a href="#" class="logo">
-            <h2>George</h2>
-            <h2>George</h2>
-        </a>
+    <a href="#" class="logo">
+        <h2>George</h2>
+        <h2>George</h2>
+    </a>
 
 
-        <!-- menu bar design-->
-        <i class="bx bx-menu" id="menu-icon"></i>
-        <nav class="navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#contact">Contacts</a>
+    <!-- menu bar design-->
+    <i class='bx bx-menu' id="menu-icon"></i>
+    
+    <nav class="navbar">
+        <ul>
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contacts</a>
+    </ul>
+    
+    </nav>
+    <img src="images/moon.png" id="icon">
 
-            <img src="images/moon.png" id="icon">
-        </nav>
+    
     </header>
 
+<!-- =====================================================-->
+<section class="home" id="home">
+    <div class="home-content">
+        <h3>Hello, <b></b></h3>
+        <h1>Welcome!</h1>
 
-    <!-- =====================================================-->
-    <section class="home" id="home">
-        <div class="home-content">
-            <h3>Hello, <b></b></h3>
-            <h1>Welcome!</h1>
+        <h3><span class="multiple-text"></span></h3>
 
-            <h3><span class="multiple-text"></span></h3>
+        <p>This is my official portfolio where i will be sharing with you all my services. </p>
 
-            <p>This is my official portfolio website to showcase all my work </p>
+        <!--==========================social media=========================-->
+        <div class="social-media">
+            <a href="https://www.facebook.com/profile.php?id=100003210651368"><i
+                    class='bx bxl-facebook-circle'></i></a>
 
-            <!--==========================social media=========================-->
-            <div class="social-media">
-                <a href="https://www.facebook.com/profile.php?id=100003210651368"><i
-                        class='bx bxl-facebook-circle'></i></a>
+            <a href="https://www.instagram.com/vicksonian_george_pmg/"><i class='bx bxl-instagram-alt'></i></a>
 
-                <a href="https://www.instagram.com/vicksonian_george_pmg/"><i class='bx bxl-instagram-alt'></i></a>
+            <a href="https://twitter.com/Vicksonian1"><i class='bx bxl-twitter'></i></a>
 
-                <a href="https://twitter.com/Vicksonian1"><i class='bx bxl-twitter'></i></a>
-
-                <a href="https://join.skype.com/invite/G7krifIgEdU0"><i class='bx bxl-skype'></i></a>
-            </div>
-
-
-            <a href="about.html" class="btn">Download CV</a>
-        </div>
-        <div class="home-img">
-            <img src="images/cc.png">
-        </div>
-    </section>
-
-
-    <!--===========================about section design==================================   -->
-    <section class="about" id="about">
-        <div class="about-img">
-            <img src="images/cc.png" alt="">
+            <a href="https://join.skype.com/invite/G7krifIgEdU0"><i class='bx bxl-skype'></i></a>
         </div>
 
-        <div class="about-content">
-            <h2 class="heading">About <span>Me.</span></h2><br><br>
-            <!--<h3>Frontend Develover</h3>-->
-            <p>Hi! I am George Michael Pußl. <br>I am a student at Zetech University, pursuing </span>Computer
-                Science</span>. I love <span>Web designing</span>, <span>Software engineering</span> &
-                Networking</span>, and finding solutions to different challenges.
 
-                I have been working on my portfolio since 2022, but now it’s time to show the world what I’ve got. And
-                that’s why I’ve created this website so you can see my work so far and get a sense of who I am as a
-                <span> Web Designer</span> & a <span>Programmer</span>
-                .
-            </p>
-            <a href="#" class="btn">Read more</a>
-        </div>
+        <a href="about.html" class="btn">Download CV</a>
+    </div>
+    <div class="home-img">
+        <img src="images/dfdf.png">
+    </div>
+</section>
+
+
+  <!--===========================about section design==================================   -->
+  <section class="about" id="about">
+    <div class="about-img">
+        <img src="images/585.png" alt="">
+    </div>
+
+    <div class="about-content">
+        <h2 class="heading">About <span>Me.</span></h2><br><br>
+        <!--<h3>Frontend Develover</h3>-->
+        <p>Hi! I am George Michael Pußl. <br>I am a student at Zetech University, pursuing </span>Computer
+            Science</span>. I love <span>Web designing</span>, <span>Software engineering</span> &
+            Networking</span>, and finding solutions to different challenges.
+
+            I have been working on my portfolio since 2022, but now it’s time to show the world what I’ve got. And
+            that’s why I’ve created this website so you can see my work so far and get a sense of who I am as a
+            <span> Web Designer</span> & a <span>Programmer</span>
+            .
+        </p>
+        <a href="#" class="btn">Read more</a>
+    </div>
     </section>
 
     <!--=====================service section design part=====================================-->
@@ -110,18 +126,16 @@
             <div class="services-box">
                 <i class='bx bx-code-alt'></i>
                 <h3>Web Development</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Dolorum consectetur ad possimus quae
-                    temporibus doloremque?</p>
-                <a href="#" class="btn">Read more</a>
+                <p>With the current knowledge on some programing languages like javascript html and css i am able to do
+                    the forllowing services</p>
+                <a href="/Web development.html" class="btn">Read more</a>
             </div>
 
 
 
             <div class="services-box">
-                <i class='bx bxs-paint-roll'></i>
                 <h3>Graphics Design</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Dolorum consectetur ad possimus quae
-                    temporibus doloremque?</p>
+                <p>#</p>
                 <a href="#" class="btn">Read more</a>
             </div>
 
@@ -132,58 +146,55 @@
                     temporibus doloremque?</p>
                 <a href="#" class="btn">Read more</a>
             </div>
-    </section>
+   
 
-    <!--===========portfolio section design===========-->
-    <section class="portfolio" id="portfolio">
-        <h2 class="heading">Latest <span>Project</span></h2>
 
-        <div class="portfolio-container">
-            <div class="portfolio-box">
-                <img src="images/gS.png" alt="">
-                <div class="portfolio-layer">
-                    <h4>Web Design</h4>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta repellat sapiente nam facere
-                        unde at.</p>
-                    <a href="#"><i class='bx bx-link-external'></i></a>
+
+    <!-- ===============contact form================-->
+    <section class="about" id="about">
+
+    <div id="Get in Touch" class="Get in Touch">
+        <div class="container">
+            <div class="box">
+                <h3>Get in Touch</h3>
+                <div class="name">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Fist Name" id="name">
+                </div>
+                <div class="name">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Second Name" id="name">
+                </div>
+                <div class="email">
+                    <i class="fas fa-envelope"></i>
+                    <input type="text" placeholder="Email" id="email">
+                </div>
+                <div class="name">
+                    <i class="fas fa-user"></i>
+                    <input type="number" placeholder="Mobile Number" id="name">
+                </div>
+                <div class="message-box">
+                    <textarea id="msg" cols="30" rows="10" placeholder="Message"></textarea>
+                </div>
+                
+                <div class="button">
+                    <button id="send" onclick="message()">Send</button>
+                </div>
+                <div class="message">
+                    <div class="success" id="success">Your Message Successfully Sent!</div>
+                    <div class="danger" id="danger">Feilds Can't be Empty!</div>
                 </div>
             </div>
-
-
-            <div class="portfolio-box">
-                <img src="images/gS.png" alt="">
-                <div class="portfolio-layer">
-                    <h4>Web Design</h4>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta repellat sapiente nam facere
-                        unde at.</p>
-                    <a href="#"><i class='bx bx-link-external'></i></a>
-                </div>
-            </div>
-
-
-            <div class="portfolio-box">
-                <img src="images/gS.png" alt="">
-                <div class="portfolio-layer">
-                    <h4>Web Design</h4>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta repellat sapiente nam facere
-                        unde at.</p>
-                    <a href="#"><i class='bx bx-link-external'></i></a>
-                </div>
-            </div>
-
-            <div class="portfolio-box">
-                <img src="images/gS.png" alt="">
-                <div class="portfolio-layer">
-                    <h4>Web Design</h4>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta repellat sapiente nam facereunde
-                        at.</p>
-                    <a href="#"><i class='bx bx-link-external'></i></a>
-                </div>
-            </div>
+        </div>
+        </div>
     </section>
 
 
-    <!--==============footer designing part===============-->
+
+
+
+
+ <!-- footer designing part -->
     <footer class="footer">
         <div class="footer-text">
             <p>Copyright &copy; 2023 by George Michael Pussl | All Rights Reserved.</p>
@@ -195,18 +206,12 @@
     </footer>
 
 
-    <!--=====================scroll reveal===================-->
-    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
 
 
-    <!--typed js from https://github.com/mattboldt/typed.js/-->
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-
-    <!--=================custom js===================-->
-    <script src="js/main.js"></script>
-    <script src="js/dark mode.js"></script>
-
+    <!--dark them toggle-->
     <script>
+
         var icon = document.getElementById("icon");
 
 
@@ -222,7 +227,7 @@
             document.body.classList.remove("dark-theme");
         }
         else if (localData == "dark") {
-            icon.src = "images/moon.png";
+            icon.src = "images/sun.png";
             document.body.classList.add("dark-theme");
         }
 
@@ -240,6 +245,18 @@
         }
     </script>
 
-</body>
+<script>
 
+let menuIcon = document.querySelector('#menu-icon');
+let navbar = document.querySelector('.navbar');
+
+menuIcon.onclick = () => {
+    menuIcon.classList.toggle('bx-x');
+    navbar.classList.toggle('active');
+};
+</script>
+
+<script src="mainm.js"></script>
+
+</body>
 </html>
