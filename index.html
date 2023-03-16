@@ -369,7 +369,7 @@
         var icon = document.getElementById("icon");
 
 
-            if (localStorage.getItem("theme") == dark) {
+            if (localStorage.getItem("theme") == null) {
                 localStorage.setItem("theme", "light");
             }
 
